@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  margin: 0px 20px;
+}
