@@ -1,13 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
 * {
   box-sizing: border-box;
   list-style: none;
+  font-family: "Nunito Sans", sans-serif;
 }
+
 body {
   height: 98vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #f6faf4;
 }
 
 .text-container {
@@ -19,11 +24,57 @@ body {
   justify-content: center;
 }
 
+.text-container p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
 .button-wrapper {
   display: flex;
   flex-direction: row;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  color: #fff;
 }
 
 button {
-  margin: 0px 20px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  width: 150px;
+  margin: 0px 30px;
+}
+
+.button-wrapper :nth-child(1) {
+  background-color: #58cc02;
+  box-shadow: 0 6px 0 #58a700;
+}
+
+.button-wrapper :nth-child(2) {
+  background-color: #f50101;
+  box-shadow: 0 6px 0 #ca0101;
+}
+
+button:active {
+  box-shadow: none;
+  transform: transalteY(5px);
+}
+
+@media screen and (max-width: 480px) {
+  .text-container {
+    width: 300px;
+    height: 400px;
+  }
+
+  button {
+    width: 80px;
+    margin: 0px 20px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
