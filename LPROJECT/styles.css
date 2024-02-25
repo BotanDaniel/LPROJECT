@@ -63,6 +63,16 @@ button:active {
   transform: transalteY(5px);
 }
 
+.yes-btn:active {
+  box-shadow: none;
+  transform: transalteY(5px);
+}
+
+.no-btn:active {
+  box-shadow: none;
+  transform: transalteY(5px);
+}
+
 @media screen and (max-width: 480px) {
   .text-container {
     width: 300px;
@@ -75,6 +85,6 @@ button:active {
   }
 
   body {
-    overflow-x: hidden;
+    overflow-x: hidden; /*hidding horizontal scroll */
   }
 }
