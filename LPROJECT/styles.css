@@ -66,6 +66,7 @@ button:active {
 .yes-btn:active {
   box-shadow: none;
   transform: transalteY(5px);
+  transition: all 0.3s ease;
 }
 
 .no-btn:active {
